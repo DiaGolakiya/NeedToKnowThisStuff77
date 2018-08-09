@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace NeedToKnowThisStuff
 {
-   class GameCode
+    public class GameCode
     {
         public int count = 0;
         public int RNDgenerator()

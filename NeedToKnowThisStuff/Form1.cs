@@ -11,14 +11,14 @@ using System.Windows.Forms;
 namespace NeedToKnowThisStuff
 {
 
-    
-   
-   
+
+
+
     //todo we need to create sound
-  
+
     //todo we need to unit taste and major two class
     //todo resouce folder to store S & N
-   
+
 
     public partial class Form1 : Form
     {
@@ -38,7 +38,7 @@ namespace NeedToKnowThisStuff
             this.Text = myGameCode.count.ToString();
             //if random number = the counter show the cat dont run more code from below.
             int rnd = myGameCode.RNDgenerator();
-            lbxOutput.Items.Insert(0,rnd);
+            lbxOutput.Items.Insert(0, rnd);
             if (myGameCode.count == 4)
             {
                 pbxImage.Image = Resource1.thU3740R4D;
@@ -50,7 +50,7 @@ namespace NeedToKnowThisStuff
                 return;
             }
 
-            switch(myGameCode.count)
+            switch (myGameCode.count)
             {
                 case 1:
                     pbxImage.Image = Resource1.thU3740R4D;
@@ -64,7 +64,7 @@ namespace NeedToKnowThisStuff
                 case 4:
                     pbxImage.Image = Resource1.thPRUWVFIN;
                     break;
-                
+
 
             }
 
@@ -82,13 +82,13 @@ namespace NeedToKnowThisStuff
             else if (myGameCode.count == 3)
             {
                 pbxImage.Image = Resource1.thPRUWVFIN;
-                
+
             }
 
             //we need a random Number generator
             //we can do this comment way as well.
 
-          
+
 
             // lbxOutput.Items.Add(RNDgenerator());
 

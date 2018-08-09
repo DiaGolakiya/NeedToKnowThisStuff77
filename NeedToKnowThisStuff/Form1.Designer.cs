@@ -28,33 +28,62 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnRun = new System.Windows.Forms.Button();
+            this.lbxOutput = new System.Windows.Forms.ListBox();
+            this.pbxImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImage)).BeginInit();
             this.SuspendLayout();
             // 
-            // button1
+            // btnRun
             // 
-            this.button1.Location = new System.Drawing.Point(196, 86);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnRun.BackColor = System.Drawing.Color.IndianRed;
+            this.btnRun.Location = new System.Drawing.Point(192, 269);
+            this.btnRun.Name = "btnRun";
+            this.btnRun.Size = new System.Drawing.Size(278, 74);
+            this.btnRun.TabIndex = 0;
+            this.btnRun.Text = "Each Click You Can See Different Image";
+            this.btnRun.UseVisualStyleBackColor = false;
+            this.btnRun.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // lbxOutput
+            // 
+            this.lbxOutput.FormattingEnabled = true;
+            this.lbxOutput.ItemHeight = 16;
+            this.lbxOutput.Location = new System.Drawing.Point(37, 38);
+            this.lbxOutput.Name = "lbxOutput";
+            this.lbxOutput.Size = new System.Drawing.Size(120, 308);
+            this.lbxOutput.TabIndex = 1;
+            // 
+            // pbxImage
+            // 
+            this.pbxImage.Image = global::NeedToKnowThisStuff.Resource1.thPRUWVFIN;
+            this.pbxImage.Location = new System.Drawing.Point(192, 38);
+            this.pbxImage.Name = "pbxImage";
+            this.pbxImage.Size = new System.Drawing.Size(278, 213);
+            this.pbxImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbxImage.TabIndex = 6;
+            this.pbxImage.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pbxImage);
+            this.Controls.Add(this.lbxOutput);
+            this.Controls.Add(this.btnRun);
             this.Name = "Form1";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pbxImage)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnRun;
+        private System.Windows.Forms.ListBox lbxOutput;
+        private System.Windows.Forms.PictureBox pbxImage;
     }
 }
 
